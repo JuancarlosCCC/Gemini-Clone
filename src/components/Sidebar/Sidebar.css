@@ -1,0 +1,305 @@
+.sidebar {
+  width: 74px;
+  min-height: 100hv;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0f4f9;
+  padding: 17px 15px 25px;
+  transition: width 0.5s ease;
+}
+
+.sidebar img {
+  width: 20px;
+}
+
+.sidebar .threedots {
+  width: 29px;
+  padding: 7px;
+  border-radius: 16px;
+  position: absolute;
+  margin-left: 247px;
+  margin-top: -4px;
+  cursor: default;
+}
+
+.sidebar .threedots:hover {
+  background-color: #d8dbe0;
+}
+
+.sidebar .plusIcon {
+  width: 14px;
+  margin-top: 2px;
+  margin-left: 1px;
+  fill: #595959;
+}
+
+.plusIcon.active {
+  fill: #444746;
+  stroke: #252525;
+}
+
+.sidebar .menu {
+  display: block;
+  cursor: pointer;
+  width: 42px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.sidebar .menu:hover {
+  background-color: #e2e6eb;
+}
+
+.sidebar .new-chat {
+  margin-top: 60px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 11px;
+  background-color: #e6eaf1;
+  border-radius: 24px;
+  font-size: 14px;
+  color: #a9a9a9;
+  width: 39px;
+  transition: width 0.5s ease;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.new-chat.extended {
+  width: 125px;
+}
+
+.new-chat.extended p {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.2s;
+}
+
+.new-chat p {
+  padding-left: 10px;
+  padding-right: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.qst {
+  white-space: nowrap;
+}
+
+.sidebar .recent {
+  display: flex;
+  flex-direction: column;
+  animation: fadein 1.5s;
+}
+
+.sidebar .recent-title {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: 9px;
+  color: #000000bd;
+}
+
+.sidebar .recent-entry {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 8px 10px;
+  padding-right: 40px;
+  border-radius: 50px;
+  color: #3c4043;
+  cursor: pointer;
+}
+
+.recent-entry:hover {
+  background-color: #e2e6eb;
+}
+
+.sidebar .bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .bottom-item {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar.extended {
+  width: 320px;
+}
+
+.sidebar .bottom-item p {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar .bottom.extended p {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.2s;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333333da;
+  color: #ffffffda;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  top: 7%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  transform-origin: center;
+  animation-name: showanimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showanimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tooltip2 {
+  position: absolute;
+  background-color: #333333da;
+  color: #ffffffda;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  top: 17.5%;
+  margin-left: -21px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  transform-origin: center;
+  animation-name: showanimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.tooltip2.extended {
+  margin-left: 20px;
+}
+
+.tooltip3 {
+  position: absolute;
+  background-color: #333333da;
+  color: #ffffffda;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 55px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  transform-origin: left;
+  animation-name: showanimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.tooltip3.extended {
+  margin-left: 303px;
+}
+
+.tooltip4 {
+  position: absolute;
+  background-color: #333333da;
+  color: #ffffffda;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 55px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  transform-origin: left;
+  animation-name: showanimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.tooltip4.extended {
+  margin-left: 303px;
+}
+
+.tooltip5 {
+  position: absolute;
+  background-color: #333333da;
+  color: #ffffffda;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 55px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  transform-origin: left;
+  animation-name: showanimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.tooltip5.extended {
+  margin-left: 303px;
+}
+
+.tooltip6 {
+  position: absolute;
+  background-color: #333333da;
+  color: #ffffffda;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 290px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  transform-origin: left;
+  animation-name: showanimation;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.usefull-newChat {
+  background-color: #dde3ea;
+}
+
+.delete {
+  position: absolute;
+  margin-left: 314px;
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 3px 10px #0000006e;
+  padding: 12px 37px 12px 14px;
+  z-index: 4;
+  gap: 10px;
+  border-radius: 6px;
+  margin-top: -41px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #e2e6eb;
+}
+
+.delete img {
+  width: 15px;
+  height: 17px;
+  margin-top: 2px;
+}
